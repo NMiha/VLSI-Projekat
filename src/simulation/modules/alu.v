@@ -12,7 +12,7 @@ module alu(
         case (oc)
             3'b000: result = a + b;    // ADD
             3'b001: result = a - b;    // SUB
-            3'b010: result = a * b;    // MULL
+            3'b010: result = a * b;    // MUL
             3'b011: result = a / b;    // DIV
             3'b100: result = ~a;       // NOT
             3'b101: result = a ^ b;    // XOR

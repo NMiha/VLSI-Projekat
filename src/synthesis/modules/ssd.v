@@ -1,7 +1,7 @@
 module ssd (
     input [3:0] in,
     output reg [6:0] out
-)
+);
 
     always @(*) begin
         case(in)

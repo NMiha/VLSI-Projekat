@@ -22,13 +22,13 @@ module debouncer (
             ff_reg <= ff_next;
             cnt_reg <= cnt_next;
         end
+    end
 
-        always @(*) begin
-            ff_next[0] = in;
-            ff_next[1] = ff_reg[0];
-            cnt_next = in_changed ? 0 : (cnt_reg + 1'b1);
-            out_next = in_stable > ff_reg[1] : out_reg;
-        end
+    always @(*) begin
+        ff_next[0] = in;
+        ff_next[1] = ff_reg[0];
+        cnt_next = in_changed ? 0 : (cnt_reg + 1'b1);
+        out_next = in_stable ? ff_reg[1] : out_reg;
     end
     
 endmodule

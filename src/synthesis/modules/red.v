@@ -8,7 +8,7 @@ module red (
     reg ff1_next, ff1_reg;
     reg ff2_next, ff2_reg;
 
-    assign out = ff2_reg & ~ff1_reg;
+    assign out = ff1_reg & ~ff2_reg;
 
     always @(posedge clk, negedge rst_n) begin
         if(!rst_n) begin
