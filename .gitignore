@@ -1,0 +1,35 @@
+# ModelSim / Questa output (created in tooling/)
+tooling/work/
+tooling/transcript
+tooling/*.wlf
+tooling/*.log
+tooling/*.vstf
+
+# Quartus output (created in tooling/)
+tooling/db/
+tooling/incremental_db/
+tooling/hc_output/
+tooling/output_files/
+tooling/greybox_tmp/
+tooling/*.qpf
+tooling/*.qsf
+tooling/*.qdf
+tooling/*.qws
+tooling/*.sdc
+tooling/*.done
+tooling/*.jdi
+tooling/*.pin
+tooling/*.eqn
+tooling/*.sof
+tooling/*.pof
+tooling/*.rpt
+tooling/*.htm
+tooling/*.summary
+tooling/*.smsg
+tooling/*.echo
+tooling/*.chg
+tooling/*.txt
+tooling/smart.log
+
+# Editor backups
+*~
